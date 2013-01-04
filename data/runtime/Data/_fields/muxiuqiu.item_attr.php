@@ -1,0 +1,1 @@
+{"0":"id","1":"item_id","2":"attr_name","3":"attr_value","_autoinc":true,"_pk":"id","_type":{"id":"int(10)","item_id":"int(10)","attr_name":"varchar(50)","attr_value":"varchar(100)"}}

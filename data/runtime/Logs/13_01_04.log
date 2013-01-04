@@ -1,0 +1,870 @@
+[ 2013-01-04T18:57:18+08:00 ] 127.0.0.1 /www.muxiuqiu.com/
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.002460s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002683s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:-0.002192s ]
+SQL: SHOW COLUMNS FROM `pin_ipban` [ RunTime:0.003954s ]
+SQL: DELETE FROM `pin_ipban` WHERE expires_time <> 0 AND expires_time < 1357297038 [ RunTime:0.000598s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pin_ipban` WHERE ( `type` = 'ip' ) AND ( `name` = '127.0.0.1' ) LIMIT 1   [ RunTime:0.000413s ]
+INFO: Run check_ipban Behavior [ RunTime:-0.003928s ]
+INFO: Run load_lang Behavior [ RunTime:-0.039720s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.041912s ]
+NOTIC: [2048] Declaration of baseAction::ajaxReturn() should be compatible with that of Action::ajaxReturn() D:\php-project-home\www.muxiuqiu.com\app\Lib\Action\baseAction.class.php 第 132 行.
+SQL: SHOW COLUMNS FROM `pin_item` [ RunTime:0.004930s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `pin_item` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000727s ]
+SQL: SELECT `id`,`uid`,`uname`,`title`,`intro`,`img`,`price`,`likes`,`comments`,`comments_cache` FROM `pin_item` WHERE ( `status` = 1 ) ORDER BY hits DESC,id DESC LIMIT 0,10   [ RunTime:0.001104s ]
+INFO: [ view_template ] --START--
+INFO: Run basic_template Behavior [ RunTime:-0.073541s ]
+INFO: [ view_template ] --END-- [ RunTime:0.003258s ]
+INFO: [ view_parse ] --START--
+INFO: [ view_template ] --START--
+INFO: Run basic_template Behavior [ RunTime:-0.084528s ]
+INFO: [ view_template ] --END-- [ RunTime:-0.007705s ]
+INFO: [ view_template ] --START--
+INFO: Run basic_template Behavior [ RunTime:-0.086377s ]
+INFO: [ view_template ] --END-- [ RunTime:-0.009569s ]
+INFO: [ view_template ] --START--
+INFO: Run basic_template Behavior [ RunTime:-0.088259s ]
+INFO: [ view_template ] --END-- [ RunTime:-0.011448s ]
+INFO: [ view_template ] --START--
+INFO: Run basic_template Behavior [ RunTime:-0.090158s ]
+INFO: [ view_template ] --END-- [ RunTime:-0.013322s ]
+SQL: SHOW COLUMNS FROM `pin_adboard` [ RunTime:0.004315s ]
+SQL: SELECT * FROM `pin_adboard` WHERE ( `id` = 9 ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000579s ]
+SQL: SHOW COLUMNS FROM `pin_ad` [ RunTime:0.004727s ]
+SQL: SELECT `id`,`type`,`name`,`url`,`content`,`desc`,`extimg`,`extval` FROM `pin_ad` WHERE ( `board_id` = 9 ) AND ( `start_time` <= 1357297038 ) AND ( `end_time` >= 1357297038 ) AND ( `status` = 1 ) ORDER BY ordid  [ RunTime:0.000715s ]
+INFO: [ view_template ] --START--
+INFO: Run basic_template Behavior [ RunTime:-0.214516s ]
+INFO: [ view_template ] --END-- [ RunTime:-0.137720s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.215800s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006152s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.222152s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.223640s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.225092s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.226293s ]
+INFO: Run content_replace Behavior [ RunTime:-0.227851s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007688s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.229857s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002727s ]
+SQL: SELECT * FROM `pin_adboard` WHERE ( `id` = 10 ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000654s ]
+SQL: SELECT `id`,`type`,`name`,`url`,`content`,`desc`,`extimg`,`extval` FROM `pin_ad` WHERE ( `board_id` = 10 ) AND ( `start_time` <= 1357297038 ) AND ( `end_time` >= 1357297038 ) AND ( `status` = 1 ) ORDER BY ordid  [ RunTime:0.000607s ]
+INFO: [ view_template ] --START--
+INFO: Run basic_template Behavior [ RunTime:-0.245103s ]
+INFO: [ view_template ] --END-- [ RunTime:-0.168290s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.245484s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.023548s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.249311s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.249461s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.249656s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.249720s ]
+INFO: Run content_replace Behavior [ RunTime:-0.249892s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.019588s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.250133s ]
+INFO: [ view_end ] --END-- [ RunTime:-0.017553s ]
+SQL: SELECT * FROM `pin_adboard` WHERE ( `id` = 1 ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000654s ]
+SQL: SELECT `id`,`type`,`name`,`url`,`content`,`desc`,`extimg`,`extval` FROM `pin_ad` WHERE ( `board_id` = 1 ) AND ( `start_time` <= 1357297038 ) AND ( `end_time` >= 1357297038 ) AND ( `status` = 1 ) ORDER BY ordid  [ RunTime:0.000718s ]
+INFO: [ view_template ] --START--
+INFO: Run basic_template Behavior [ RunTime:-0.257299s ]
+INFO: [ view_template ] --END-- [ RunTime:-0.180506s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.258832s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.036891s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.268610s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.268783s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.268923s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.268989s ]
+INFO: Run content_replace Behavior [ RunTime:-0.269171s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.038886s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.269428s ]
+INFO: [ view_end ] --END-- [ RunTime:-0.036847s ]
+SQL: SELECT * FROM `pin_adboard` WHERE ( `id` = 2 ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000631s ]
+SQL: SELECT `id`,`type`,`name`,`url`,`content`,`desc`,`extimg`,`extval` FROM `pin_ad` WHERE ( `board_id` = 2 ) AND ( `start_time` <= 1357297038 ) AND ( `end_time` >= 1357297038 ) AND ( `status` = 1 ) ORDER BY ordid  [ RunTime:0.000891s ]
+INFO: [ view_template ] --START--
+INFO: Run basic_template Behavior [ RunTime:-0.276891s ]
+INFO: [ view_template ] --END-- [ RunTime:-0.200100s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.278461s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.056522s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.297672s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.297841s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.297979s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.298045s ]
+INFO: Run content_replace Behavior [ RunTime:-0.298230s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.067949s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.298479s ]
+INFO: [ view_end ] --END-- [ RunTime:-0.065899s ]
+SQL: SELECT * FROM `pin_adboard` WHERE ( `id` = 4 ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000833s ]
+SQL: SELECT `id`,`type`,`name`,`url`,`content`,`desc`,`extimg`,`extval` FROM `pin_ad` WHERE ( `board_id` = 4 ) AND ( `start_time` <= 1357297038 ) AND ( `end_time` >= 1357297038 ) AND ( `status` = 1 ) ORDER BY ordid  [ RunTime:0.000608s ]
+INFO: [ view_template ] --START--
+INFO: Run basic_template Behavior [ RunTime:-0.302832s ]
+INFO: [ view_template ] --END-- [ RunTime:-0.226038s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.303194s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.081258s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.306810s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.306960s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.307097s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.307161s ]
+INFO: Run content_replace Behavior [ RunTime:-0.307340s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.077087s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.307579s ]
+INFO: [ view_end ] --END-- [ RunTime:-0.074999s ]
+SQL: SELECT * FROM `pin_adboard` WHERE ( `id` = 5 ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000640s ]
+SQL: SELECT `id`,`type`,`name`,`url`,`content`,`desc`,`extimg`,`extval` FROM `pin_ad` WHERE ( `board_id` = 5 ) AND ( `start_time` <= 1357297038 ) AND ( `end_time` >= 1357297038 ) AND ( `status` = 1 ) ORDER BY ordid  [ RunTime:0.000764s ]
+INFO: [ view_template ] --START--
+INFO: Run basic_template Behavior [ RunTime:-0.311982s ]
+INFO: [ view_template ] --END-- [ RunTime:-0.235188s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.312400s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.090453s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.316211s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.316362s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.316493s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.316561s ]
+INFO: Run content_replace Behavior [ RunTime:-0.316741s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.086487s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.316981s ]
+INFO: [ view_end ] --END-- [ RunTime:-0.084401s ]
+SQL: SELECT * FROM `pin_adboard` WHERE ( `id` = 11 ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000651s ]
+SQL: SELECT `id`,`type`,`name`,`url`,`content`,`desc`,`extimg`,`extval` FROM `pin_ad` WHERE ( `board_id` = 11 ) AND ( `start_time` <= 1357297038 ) AND ( `end_time` >= 1357297038 ) AND ( `status` = 1 ) ORDER BY ordid  [ RunTime:0.000617s ]
+INFO: [ view_template ] --START--
+INFO: Run basic_template Behavior [ RunTime:-0.431209s ]
+INFO: [ view_template ] --END-- [ RunTime:-0.354408s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.431571s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.209631s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.435278s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.435435s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.435580s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.435646s ]
+INFO: Run content_replace Behavior [ RunTime:-0.435825s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.205555s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.436064s ]
+INFO: [ view_end ] --END-- [ RunTime:-0.203484s ]
+SQL: SELECT * FROM `pin_adboard` WHERE ( `id` = 8 ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000651s ]
+SQL: SELECT `id`,`type`,`name`,`url`,`content`,`desc`,`extimg`,`extval` FROM `pin_ad` WHERE ( `board_id` = 8 ) AND ( `start_time` <= 1357297038 ) AND ( `end_time` >= 1357297038 ) AND ( `status` = 1 ) ORDER BY ordid  [ RunTime:0.000745s ]
+INFO: [ view_template ] --START--
+INFO: Run basic_template Behavior [ RunTime:-0.449788s ]
+INFO: [ view_template ] --END-- [ RunTime:-0.372994s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.451587s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.229644s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.460571s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.460718s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.460846s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.460909s ]
+INFO: Run content_replace Behavior [ RunTime:-0.461078s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.230848s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.461309s ]
+INFO: [ view_end ] --END-- [ RunTime:-0.228730s ]
+NOTIC: [2] Missing argument 1 for JSMin::__construct(), called in D:\php-project-home\www.muxiuqiu.com\app\Lib\Pintag\loadTag.class.php on line 14 and defined D:\php-project-home\www.muxiuqiu.com\app\Lib\ORG\JSMin.class.php 第 89 行.
+NOTIC: [8] Undefined variable: input D:\php-project-home\www.muxiuqiu.com\app\Lib\ORG\JSMin.class.php 第 91 行.
+NOTIC: [2] Missing argument 1 for Dir::__construct(), called in D:\php-project-home\www.muxiuqiu.com\app\Lib\Pintag\loadTag.class.php on line 15 and defined D:\php-project-home\www.muxiuqiu.com\app\Lib\ORG\Dir.class.php 第 37 行.
+NOTIC: [8] Undefined variable: path D:\php-project-home\www.muxiuqiu.com\app\Lib\ORG\Dir.class.php 第 39 行.
+NOTIC: [8] Undefined variable: path D:\php-project-home\www.muxiuqiu.com\app\Lib\ORG\Dir.class.php 第 39 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.461309s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.229644s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.491347s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.492235s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.492446s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.492511s ]
+INFO: Run content_replace Behavior [ RunTime:-0.492815s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.261623s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.493389s ]
+INFO: [ view_end ] --END-- [ RunTime:-0.260806s ]
+
+[ 2013-01-04T18:57:26+08:00 ] 127.0.0.1 /www.muxiuqiu.com/book/
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.003135s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003293s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:-0.002122s ]
+SQL: SHOW COLUMNS FROM `pin_ipban` [ RunTime:0.003977s ]
+SQL: DELETE FROM `pin_ipban` WHERE expires_time <> 0 AND expires_time < 1357297046 [ RunTime:0.000560s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pin_ipban` WHERE ( `type` = 'ip' ) AND ( `name` = '127.0.0.1' ) LIMIT 1   [ RunTime:0.000733s ]
+INFO: Run check_ipban Behavior [ RunTime:-0.003835s ]
+INFO: Run load_lang Behavior [ RunTime:-0.036610s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.039070s ]
+NOTIC: [2048] Declaration of baseAction::ajaxReturn() should be compatible with that of Action::ajaxReturn() D:\php-project-home\www.muxiuqiu.com\app\Lib\Action\baseAction.class.php 第 132 行.
+SQL: SHOW COLUMNS FROM `pin_item` [ RunTime:0.005399s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `pin_item` WHERE ( `status` = 1 ) LIMIT 1   [ RunTime:0.000796s ]
+SQL: SELECT `id`,`uid`,`uname`,`title`,`intro`,`img`,`price`,`likes`,`comments`,`comments_cache` FROM `pin_item` WHERE ( `status` = 1 ) ORDER BY hits DESC,id DESC LIMIT 0,10   [ RunTime:0.001099s ]
+NOTIC: [8] Undefined index:  site_title D:\php-project-home\www.muxiuqiu.com\app\Lib\Action\frontendAction.class.php 第 61 行.
+NOTIC: [8] Undefined index:  site_name D:\php-project-home\www.muxiuqiu.com\app\Lib\Action\frontendAction.class.php 第 61 行.
+NOTIC: [8] Undefined index:  site_description D:\php-project-home\www.muxiuqiu.com\app\Lib\Action\frontendAction.class.php 第 61 行.
+INFO: [ view_template ] --START--
+INFO: Run basic_template Behavior [ RunTime:-0.071669s ]
+INFO: [ view_template ] --END-- [ RunTime:0.003397s ]
+INFO: [ view_parse ] --START--
+INFO: [ view_template ] --START--
+INFO: Run basic_template Behavior [ RunTime:-0.082418s ]
+INFO: [ view_template ] --END-- [ RunTime:-0.007335s ]
+INFO: [ view_template ] --START--
+INFO: Run basic_template Behavior [ RunTime:-0.084358s ]
+INFO: [ view_template ] --END-- [ RunTime:-0.009290s ]
+INFO: [ view_template ] --START--
+INFO: Run basic_template Behavior [ RunTime:-0.086385s ]
+INFO: [ view_template ] --END-- [ RunTime:-0.011264s ]
+INFO: [ view_template ] --START--
+INFO: Run basic_template Behavior [ RunTime:-0.088531s ]
+INFO: [ view_template ] --END-- [ RunTime:-0.013459s ]
+SQL: SHOW COLUMNS FROM `pin_adboard` [ RunTime:0.004739s ]
+SQL: SELECT * FROM `pin_adboard` WHERE ( `id` = 12 ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.001131s ]
+SQL: SHOW COLUMNS FROM `pin_ad` [ RunTime:0.006045s ]
+SQL: SELECT `id`,`type`,`name`,`url`,`content`,`desc`,`extimg`,`extval` FROM `pin_ad` WHERE ( `board_id` = 12 ) AND ( `start_time` <= 1357297046 ) AND ( `end_time` >= 1357297046 ) AND ( `status` = 1 ) ORDER BY ordid  [ RunTime:0.000752s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\php-project-home\www.muxiuqiu.com\app\Lib\Widget\advertWidget.class.php 第 22 行.
+INFO: [ view_template ] --START--
+INFO: Run basic_template Behavior [ RunTime:-0.217712s ]
+INFO: [ view_template ] --END-- [ RunTime:-0.142653s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.218974s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005434s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.224490s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.225997s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.228113s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.230088s ]
+INFO: Run content_replace Behavior [ RunTime:-0.232257s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010162s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.234779s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002456s ]
+SQL: SELECT * FROM `pin_adboard` WHERE ( `id` = 11 ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000788s ]
+SQL: SELECT `id`,`type`,`name`,`url`,`content`,`desc`,`extimg`,`extval` FROM `pin_ad` WHERE ( `board_id` = 11 ) AND ( `start_time` <= 1357297046 ) AND ( `end_time` >= 1357297046 ) AND ( `status` = 1 ) ORDER BY ordid  [ RunTime:0.000677s ]
+INFO: [ view_template ] --START--
+INFO: Run basic_template Behavior [ RunTime:-0.284356s ]
+INFO: [ view_template ] --END-- [ RunTime:-0.209296s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.284735s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.060346s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.288905s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.289066s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.289200s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.289266s ]
+INFO: Run content_replace Behavior [ RunTime:-0.289445s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.054260s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.289691s ]
+INFO: [ view_end ] --END-- [ RunTime:-0.052462s ]
+SQL: SELECT * FROM `pin_adboard` WHERE ( `id` = 8 ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000940s ]
+SQL: SELECT `id`,`type`,`name`,`url`,`content`,`desc`,`extimg`,`extval` FROM `pin_ad` WHERE ( `board_id` = 8 ) AND ( `start_time` <= 1357297046 ) AND ( `end_time` >= 1357297046 ) AND ( `status` = 1 ) ORDER BY ordid  [ RunTime:0.001150s ]
+INFO: [ view_template ] --START--
+INFO: Run basic_template Behavior [ RunTime:-0.309559s ]
+INFO: [ view_template ] --END-- [ RunTime:-0.234497s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.311026s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.086635s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.319612s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.319763s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.319901s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.319968s ]
+INFO: Run content_replace Behavior [ RunTime:-0.320146s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.084968s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.320385s ]
+INFO: [ view_end ] --END-- [ RunTime:-0.083155s ]
+NOTIC: [2] Missing argument 1 for JSMin::__construct(), called in D:\php-project-home\www.muxiuqiu.com\app\Lib\Pintag\loadTag.class.php on line 14 and defined D:\php-project-home\www.muxiuqiu.com\app\Lib\ORG\JSMin.class.php 第 89 行.
+NOTIC: [8] Undefined variable: input D:\php-project-home\www.muxiuqiu.com\app\Lib\ORG\JSMin.class.php 第 91 行.
+NOTIC: [2] Missing argument 1 for Dir::__construct(), called in D:\php-project-home\www.muxiuqiu.com\app\Lib\Pintag\loadTag.class.php on line 15 and defined D:\php-project-home\www.muxiuqiu.com\app\Lib\ORG\Dir.class.php 第 37 行.
+NOTIC: [8] Undefined variable: path D:\php-project-home\www.muxiuqiu.com\app\Lib\ORG\Dir.class.php 第 39 行.
+NOTIC: [8] Undefined variable: path D:\php-project-home\www.muxiuqiu.com\app\Lib\ORG\Dir.class.php 第 39 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.320385s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.086635s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.348506s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.349049s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.349218s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.349283s ]
+INFO: Run content_replace Behavior [ RunTime:-0.349531s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.113862s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.349926s ]
+INFO: [ view_end ] --END-- [ RunTime:-0.112694s ]
+
+[ 2013-01-04T18:59:03+08:00 ] 127.0.0.1 /www.muxiuqiu.com/admin
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.005824s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005988s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:-0.003312s ]
+SQL: SHOW COLUMNS FROM `pin_ipban` [ RunTime:0.004220s ]
+SQL: DELETE FROM `pin_ipban` WHERE expires_time <> 0 AND expires_time < 1357297142 [ RunTime:0.000391s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pin_ipban` WHERE ( `type` = 'ip' ) AND ( `name` = '127.0.0.1' ) LIMIT 1   [ RunTime:0.000291s ]
+INFO: Run check_ipban Behavior [ RunTime:-0.005207s ]
+INFO: Run load_lang Behavior [ RunTime:-0.035798s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.039481s ]
+NOTIC: [2048] Declaration of baseAction::ajaxReturn() should be compatible with that of Action::ajaxReturn() D:\php-project-home\www.muxiuqiu.com\app\Lib\Action\baseAction.class.php 第 132 行.
+SQL: SHOW COLUMNS FROM `pin_menu` [ RunTime:0.004514s ]
+SQL: SHOW COLUMNS FROM `pin_menu` [ RunTime:0.004755s ]
+SQL: SELECT * FROM `pin_menu` WHERE (  ( `pid` = 0 ) ) AND ( `display` = 1 ) ORDER BY ordid  [ RunTime:0.000789s ]
+INFO: [ view_template ] --START--
+INFO: Run basic_template Behavior [ RunTime:-0.068499s ]
+INFO: [ view_template ] --END-- [ RunTime:0.003176s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.071773s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041770s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.113625s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.115385s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.116810s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.117981s ]
+INFO: Run content_replace Behavior [ RunTime:-0.119523s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007762s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.121530s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001900s ]
+
+[ 2013-01-04T18:59:03+08:00 ] 127.0.0.1 /www.muxiuqiu.com/?g=admin&m=index&a=panel
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.002501s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002704s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:-0.002349s ]
+SQL: SHOW COLUMNS FROM `pin_ipban` [ RunTime:0.004290s ]
+SQL: DELETE FROM `pin_ipban` WHERE expires_time <> 0 AND expires_time < 1357297143 [ RunTime:0.000794s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pin_ipban` WHERE ( `type` = 'ip' ) AND ( `name` = '127.0.0.1' ) LIMIT 1   [ RunTime:0.000791s ]
+INFO: Run check_ipban Behavior [ RunTime:-0.004262s ]
+INFO: Run load_lang Behavior [ RunTime:-0.060666s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.065850s ]
+NOTIC: [2048] Declaration of baseAction::ajaxReturn() should be compatible with that of Action::ajaxReturn() D:\php-project-home\www.muxiuqiu.com\app\Lib\Action\baseAction.class.php 第 132 行.
+SQL: SHOW COLUMNS FROM `pin_menu` [ RunTime:0.004652s ]
+INFO: [ view_template ] --START--
+INFO: Run basic_template Behavior [ RunTime:-0.088937s ]
+INFO: [ view_template ] --END-- [ RunTime:0.003070s ]
+INFO: [ view_parse ] --START--
+INFO: [ view_template ] --START--
+INFO: Run basic_template Behavior [ RunTime:-0.099624s ]
+INFO: [ view_template ] --END-- [ RunTime:-0.007567s ]
+NOTIC: [8] Undefined variable: sub_menu D:\php-project-home\www.muxiuqiu.com\data\runtime\Cache\admin\ba3d2a4c7110487814df26e78e828b96.php 第 21 行.
+NOTIC: [8] Undefined variable: big_menu D:\php-project-home\www.muxiuqiu.com\data\runtime\Cache\admin\ba3d2a4c7110487814df26e78e828b96.php 第 21 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.099624s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.058692s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.150870s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.152389s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.153892s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.155089s ]
+INFO: Run content_replace Behavior [ RunTime:-0.156634s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007612s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.158628s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001915s ]
+
+[ 2013-01-04T18:59:03+08:00 ] 127.0.0.1 /www.muxiuqiu.com/?g=admin&m=index&a=left
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.002361s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002521s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:-0.004048s ]
+SQL: SHOW COLUMNS FROM `pin_ipban` [ RunTime:0.004181s ]
+SQL: DELETE FROM `pin_ipban` WHERE expires_time <> 0 AND expires_time < 1357297143 [ RunTime:0.000809s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pin_ipban` WHERE ( `type` = 'ip' ) AND ( `name` = '127.0.0.1' ) LIMIT 1   [ RunTime:0.000875s ]
+INFO: Run check_ipban Behavior [ RunTime:-0.005929s ]
+INFO: Run load_lang Behavior [ RunTime:-0.062014s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.064643s ]
+NOTIC: [2048] Declaration of baseAction::ajaxReturn() should be compatible with that of Action::ajaxReturn() D:\php-project-home\www.muxiuqiu.com\app\Lib\Action\baseAction.class.php 第 132 行.
+SQL: SHOW COLUMNS FROM `pin_menu` [ RunTime:0.005923s ]
+SQL: SELECT * FROM `pin_menu` WHERE ( `often` = 1 )  [ RunTime:0.001366s ]
+INFO: [ view_template ] --START--
+INFO: Run basic_template Behavior [ RunTime:-0.112284s ]
+INFO: [ view_template ] --END-- [ RunTime:0.003332s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index:  data D:\php-project-home\www.muxiuqiu.com\data\runtime\Cache\admin\8bbf59c365bdf6267b9eb5e67d22693d.php 第 3 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.116223s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042789s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.158725s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.161061s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.163585s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.165617s ]
+INFO: Run content_replace Behavior [ RunTime:-0.168821s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.013110s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.171933s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002518s ]
+
+[ 2013-01-04T18:59:11+08:00 ] 127.0.0.1 /www.muxiuqiu.com/?g=admin&m=index&a=left
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001642s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001818s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:-0.002104s ]
+SQL: SHOW COLUMNS FROM `pin_ipban` [ RunTime:0.005127s ]
+SQL: DELETE FROM `pin_ipban` WHERE expires_time <> 0 AND expires_time < 1357297151 [ RunTime:0.000775s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pin_ipban` WHERE ( `type` = 'ip' ) AND ( `name` = '127.0.0.1' ) LIMIT 1   [ RunTime:0.000898s ]
+INFO: Run check_ipban Behavior [ RunTime:-0.003351s ]
+INFO: Run load_lang Behavior [ RunTime:-0.037847s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.042659s ]
+NOTIC: [2048] Declaration of baseAction::ajaxReturn() should be compatible with that of Action::ajaxReturn() D:\php-project-home\www.muxiuqiu.com\app\Lib\Action\baseAction.class.php 第 132 行.
+SQL: SHOW COLUMNS FROM `pin_menu` [ RunTime:0.004451s ]
+SQL: SHOW COLUMNS FROM `pin_menu` [ RunTime:0.004038s ]
+SQL: SELECT * FROM `pin_menu` WHERE (  ( `pid` = 1 ) ) AND ( `display` = 1 ) ORDER BY ordid  [ RunTime:0.000688s ]
+SQL: SELECT * FROM `pin_menu` WHERE (  ( `pid` = 1 ) ) AND ( `display` = 1 ) ORDER BY ordid  [ RunTime:0.000593s ]
+SQL: SELECT * FROM `pin_menu` WHERE (  ( `pid` = 2 ) ) AND ( `display` = 1 ) ORDER BY ordid  [ RunTime:0.000765s ]
+SQL: SELECT * FROM `pin_menu` WHERE (  ( `pid` = 216 ) ) AND ( `display` = 1 ) ORDER BY ordid  [ RunTime:0.001078s ]
+SQL: SELECT * FROM `pin_menu` WHERE (  ( `pid` = 60 ) ) AND ( `display` = 1 ) ORDER BY ordid  [ RunTime:0.000699s ]
+INFO: [ view_template ] --START--
+INFO: Run basic_template Behavior [ RunTime:-0.072283s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002001s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.074381s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021905s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.096369s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.097102s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.097815s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.098290s ]
+INFO: Run content_replace Behavior [ RunTime:-0.099146s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004211s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.100708s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001379s ]
+
+[ 2013-01-04T18:59:14+08:00 ] 127.0.0.1 /www.muxiuqiu.com/?g=admin&m=index&a=left
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001713s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001891s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:-0.001224s ]
+SQL: SHOW COLUMNS FROM `pin_ipban` [ RunTime:0.005024s ]
+SQL: DELETE FROM `pin_ipban` WHERE expires_time <> 0 AND expires_time < 1357297154 [ RunTime:0.000514s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pin_ipban` WHERE ( `type` = 'ip' ) AND ( `name` = '127.0.0.1' ) LIMIT 1   [ RunTime:0.000407s ]
+INFO: Run check_ipban Behavior [ RunTime:-0.002277s ]
+INFO: Run load_lang Behavior [ RunTime:-0.029900s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.034207s ]
+NOTIC: [2048] Declaration of baseAction::ajaxReturn() should be compatible with that of Action::ajaxReturn() D:\php-project-home\www.muxiuqiu.com\app\Lib\Action\baseAction.class.php 第 132 行.
+SQL: SHOW COLUMNS FROM `pin_menu` [ RunTime:0.004992s ]
+SQL: SELECT * FROM `pin_menu` WHERE ( `often` = 1 )  [ RunTime:0.001083s ]
+INFO: [ view_template ] --START--
+INFO: Run basic_template Behavior [ RunTime:-0.053616s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001858s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index:  data D:\php-project-home\www.muxiuqiu.com\data\runtime\Cache\admin\8bbf59c365bdf6267b9eb5e67d22693d.php 第 3 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.055584s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020729s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.076379s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.077223s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.077949s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.078524s ]
+INFO: Run content_replace Behavior [ RunTime:-0.079394s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004280s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.080787s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001209s ]
+
+[ 2013-01-04T18:59:15+08:00 ] 127.0.0.1 /www.muxiuqiu.com/?g=admin&m=index&a=left
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001952s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002130s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:-0.001213s ]
+SQL: SHOW COLUMNS FROM `pin_ipban` [ RunTime:0.005190s ]
+SQL: DELETE FROM `pin_ipban` WHERE expires_time <> 0 AND expires_time < 1357297155 [ RunTime:0.000445s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pin_ipban` WHERE ( `type` = 'ip' ) AND ( `name` = '127.0.0.1' ) LIMIT 1   [ RunTime:0.000603s ]
+INFO: Run check_ipban Behavior [ RunTime:-0.002275s ]
+INFO: Run load_lang Behavior [ RunTime:-0.031063s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.035707s ]
+NOTIC: [2048] Declaration of baseAction::ajaxReturn() should be compatible with that of Action::ajaxReturn() D:\php-project-home\www.muxiuqiu.com\app\Lib\Action\baseAction.class.php 第 132 行.
+SQL: SHOW COLUMNS FROM `pin_menu` [ RunTime:0.004161s ]
+SQL: SHOW COLUMNS FROM `pin_menu` [ RunTime:0.004665s ]
+SQL: SELECT * FROM `pin_menu` WHERE (  ( `pid` = 50 ) ) AND ( `display` = 1 ) ORDER BY ordid  [ RunTime:0.000744s ]
+SQL: SELECT * FROM `pin_menu` WHERE (  ( `pid` = 50 ) ) AND ( `display` = 1 ) ORDER BY ordid  [ RunTime:0.000618s ]
+SQL: SELECT * FROM `pin_menu` WHERE (  ( `pid` = 51 ) ) AND ( `display` = 1 ) ORDER BY ordid  [ RunTime:0.000583s ]
+SQL: SELECT * FROM `pin_menu` WHERE (  ( `pid` = 164 ) ) AND ( `display` = 1 ) ORDER BY ordid  [ RunTime:0.000530s ]
+INFO: [ view_template ] --START--
+INFO: Run basic_template Behavior [ RunTime:-0.062496s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001786s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.064370s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021421s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.085872s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.086874s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.087837s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.088416s ]
+INFO: Run content_replace Behavior [ RunTime:-0.089295s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004696s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.090696s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001207s ]
+
+[ 2013-01-04T18:59:16+08:00 ] 127.0.0.1 /www.muxiuqiu.com/?g=admin&m=item&a=index&menuid=52
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001639s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001797s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:-0.001211s ]
+SQL: SHOW COLUMNS FROM `pin_ipban` [ RunTime:0.005736s ]
+SQL: DELETE FROM `pin_ipban` WHERE expires_time <> 0 AND expires_time < 1357297156 [ RunTime:0.000659s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pin_ipban` WHERE ( `type` = 'ip' ) AND ( `name` = '127.0.0.1' ) LIMIT 1   [ RunTime:0.000954s ]
+INFO: Run check_ipban Behavior [ RunTime:-0.002356s ]
+INFO: Run load_lang Behavior [ RunTime:-0.033099s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.038700s ]
+NOTIC: [2048] Declaration of baseAction::ajaxReturn() should be compatible with that of Action::ajaxReturn() D:\php-project-home\www.muxiuqiu.com\app\Lib\Action\baseAction.class.php 第 132 行.
+SQL: SHOW COLUMNS FROM `pin_menu` [ RunTime:0.006173s ]
+SQL: SHOW COLUMNS FROM `pin_menu` [ RunTime:0.004823s ]
+SQL: SELECT * FROM `pin_menu` WHERE (  ( `pid` = 52 ) ) AND ( `display` = 1 ) ORDER BY ordid  [ RunTime:0.001143s ]
+NOTIC: [2] strpos() [<a href='function.strpos'>function.strpos</a>]: Empty delimiter D:\php-project-home\www.muxiuqiu.com\app\Lib\Action\backendAction.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `pin_item` [ RunTime:0.005541s ]
+SQL: SHOW COLUMNS FROM `pin_item_cate` [ RunTime:0.007501s ]
+SQL: SELECT `id`,`name` FROM `pin_item_cate`  [ RunTime:0.001336s ]
+NOTIC: [8] Undefined index:  status D:\php-project-home\www.muxiuqiu.com\app\Lib\Action\admin\itemAction.class.php 第 48 行.
+NOTIC: [8] Undefined variable: spid D:\php-project-home\www.muxiuqiu.com\app\Lib\Action\admin\itemAction.class.php 第 64 行.
+SQL: SELECT COUNT(id) AS tp_count FROM `pin_item` LIMIT 1   [ RunTime:0.000602s ]
+SQL: SELECT * FROM `pin_item` ORDER BY ordid ASC, add_time DESC LIMIT 0,20   [ RunTime:0.002011s ]
+INFO: [ view_template ] --START--
+INFO: Run basic_template Behavior [ RunTime:-0.101255s ]
+INFO: [ view_template ] --END-- [ RunTime:0.005132s ]
+INFO: [ view_parse ] --START--
+INFO: [ view_template ] --START--
+INFO: Run basic_template Behavior [ RunTime:-0.112704s ]
+INFO: [ view_template ] --END-- [ RunTime:-0.006296s ]
+INFO: [ view_template ] --START--
+INFO: Run basic_template Behavior [ RunTime:-0.115790s ]
+INFO: [ view_template ] --END-- [ RunTime:-0.009394s ]
+NOTIC: [8] Undefined index:  colors D:\php-project-home\www.muxiuqiu.com\data\runtime\Cache\admin\6090765389774d6a15ddce11022e141b.php 第 122 行.
+NOTIC: [8] Undefined index:  colors D:\php-project-home\www.muxiuqiu.com\data\runtime\Cache\admin\6090765389774d6a15ddce11022e141b.php 第 122 行.
+NOTIC: [8] Undefined index:  colors D:\php-project-home\www.muxiuqiu.com\data\runtime\Cache\admin\6090765389774d6a15ddce11022e141b.php 第 122 行.
+NOTIC: [8] Undefined index:  colors D:\php-project-home\www.muxiuqiu.com\data\runtime\Cache\admin\6090765389774d6a15ddce11022e141b.php 第 122 行.
+NOTIC: [8] Undefined index:  colors D:\php-project-home\www.muxiuqiu.com\data\runtime\Cache\admin\6090765389774d6a15ddce11022e141b.php 第 122 行.
+NOTIC: [8] Undefined index:  colors D:\php-project-home\www.muxiuqiu.com\data\runtime\Cache\admin\6090765389774d6a15ddce11022e141b.php 第 122 行.
+NOTIC: [8] Undefined index:  colors D:\php-project-home\www.muxiuqiu.com\data\runtime\Cache\admin\6090765389774d6a15ddce11022e141b.php 第 122 行.
+NOTIC: [8] Undefined index:  colors D:\php-project-home\www.muxiuqiu.com\data\runtime\Cache\admin\6090765389774d6a15ddce11022e141b.php 第 122 行.
+NOTIC: [8] Undefined index:  colors D:\php-project-home\www.muxiuqiu.com\data\runtime\Cache\admin\6090765389774d6a15ddce11022e141b.php 第 122 行.
+NOTIC: [8] Undefined index:  colors D:\php-project-home\www.muxiuqiu.com\data\runtime\Cache\admin\6090765389774d6a15ddce11022e141b.php 第 122 行.
+NOTIC: [8] Undefined index:  colors D:\php-project-home\www.muxiuqiu.com\data\runtime\Cache\admin\6090765389774d6a15ddce11022e141b.php 第 122 行.
+NOTIC: [8] Undefined index:  colors D:\php-project-home\www.muxiuqiu.com\data\runtime\Cache\admin\6090765389774d6a15ddce11022e141b.php 第 122 行.
+NOTIC: [8] Undefined index:  colors D:\php-project-home\www.muxiuqiu.com\data\runtime\Cache\admin\6090765389774d6a15ddce11022e141b.php 第 122 行.
+NOTIC: [8] Undefined index:  colors D:\php-project-home\www.muxiuqiu.com\data\runtime\Cache\admin\6090765389774d6a15ddce11022e141b.php 第 122 行.
+NOTIC: [8] Undefined index:  colors D:\php-project-home\www.muxiuqiu.com\data\runtime\Cache\admin\6090765389774d6a15ddce11022e141b.php 第 122 行.
+NOTIC: [8] Undefined index:  colors D:\php-project-home\www.muxiuqiu.com\data\runtime\Cache\admin\6090765389774d6a15ddce11022e141b.php 第 122 行.
+NOTIC: [8] Undefined index:  colors D:\php-project-home\www.muxiuqiu.com\data\runtime\Cache\admin\6090765389774d6a15ddce11022e141b.php 第 122 行.
+NOTIC: [8] Undefined index:  colors D:\php-project-home\www.muxiuqiu.com\data\runtime\Cache\admin\6090765389774d6a15ddce11022e141b.php 第 122 行.
+NOTIC: [8] Undefined index:  colors D:\php-project-home\www.muxiuqiu.com\data\runtime\Cache\admin\6090765389774d6a15ddce11022e141b.php 第 122 行.
+NOTIC: [8] Undefined index:  colors D:\php-project-home\www.muxiuqiu.com\data\runtime\Cache\admin\6090765389774d6a15ddce11022e141b.php 第 122 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.115790s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.065189s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.171786s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.173488s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.174768s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.175460s ]
+INFO: Run content_replace Behavior [ RunTime:-0.176541s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007085s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.179095s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001361s ]
+
+[ 2013-01-04T18:59:28+08:00 ] 127.0.0.1 /www.muxiuqiu.com/?g=admin&m=item&a=index&menuid=52&sm=image
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.002745s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002935s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:-0.001501s ]
+SQL: SHOW COLUMNS FROM `pin_ipban` [ RunTime:0.003790s ]
+SQL: DELETE FROM `pin_ipban` WHERE expires_time <> 0 AND expires_time < 1357297167 [ RunTime:0.000511s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pin_ipban` WHERE ( `type` = 'ip' ) AND ( `name` = '127.0.0.1' ) LIMIT 1   [ RunTime:0.000542s ]
+INFO: Run check_ipban Behavior [ RunTime:-0.002619s ]
+INFO: Run load_lang Behavior [ RunTime:-0.030317s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.034861s ]
+NOTIC: [2048] Declaration of baseAction::ajaxReturn() should be compatible with that of Action::ajaxReturn() D:\php-project-home\www.muxiuqiu.com\app\Lib\Action\baseAction.class.php 第 132 行.
+SQL: SHOW COLUMNS FROM `pin_menu` [ RunTime:0.004890s ]
+SQL: SHOW COLUMNS FROM `pin_menu` [ RunTime:0.004578s ]
+SQL: SELECT * FROM `pin_menu` WHERE (  ( `pid` = 52 ) ) AND ( `display` = 1 ) ORDER BY ordid  [ RunTime:0.000842s ]
+NOTIC: [2] strpos() [<a href='function.strpos'>function.strpos</a>]: Empty delimiter D:\php-project-home\www.muxiuqiu.com\app\Lib\Action\backendAction.class.php 第 21 行.
+SQL: SHOW COLUMNS FROM `pin_item` [ RunTime:0.005363s ]
+SQL: SHOW COLUMNS FROM `pin_item_cate` [ RunTime:0.004907s ]
+SQL: SELECT `id`,`name` FROM `pin_item_cate`  [ RunTime:0.001116s ]
+NOTIC: [8] Undefined index:  status D:\php-project-home\www.muxiuqiu.com\app\Lib\Action\admin\itemAction.class.php 第 48 行.
+NOTIC: [8] Undefined variable: spid D:\php-project-home\www.muxiuqiu.com\app\Lib\Action\admin\itemAction.class.php 第 64 行.
+SQL: SELECT COUNT(id) AS tp_count FROM `pin_item` LIMIT 1   [ RunTime:0.001239s ]
+SQL: SELECT * FROM `pin_item` ORDER BY ordid ASC, add_time DESC LIMIT 0,20   [ RunTime:0.001429s ]
+INFO: [ view_template ] --START--
+INFO: Run basic_template Behavior [ RunTime:-0.089516s ]
+INFO: [ view_template ] --END-- [ RunTime:0.003929s ]
+INFO: [ view_parse ] --START--
+INFO: [ view_template ] --START--
+INFO: Run basic_template Behavior [ RunTime:-0.100284s ]
+INFO: [ view_template ] --END-- [ RunTime:-0.006838s ]
+INFO: [ view_template ] --START--
+INFO: Run basic_template Behavior [ RunTime:-0.103464s ]
+INFO: [ view_template ] --END-- [ RunTime:-0.010029s ]
+INFO: Run ParseTemplate Behavior [ RunTime:-0.103464s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.059963s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.153581s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.155465s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.156609s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.157172s ]
+INFO: Run content_replace Behavior [ RunTime:-0.158087s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005949s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.159691s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001382s ]
+
+[ 2013-01-04T18:59:38+08:00 ] 127.0.0.1 /www.muxiuqiu.com/album/15/
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.002525s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002750s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:-0.002279s ]
+SQL: SHOW COLUMNS FROM `pin_ipban` [ RunTime:0.007300s ]
+SQL: DELETE FROM `pin_ipban` WHERE expires_time <> 0 AND expires_time < 1357297178 [ RunTime:0.000895s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pin_ipban` WHERE ( `type` = 'ip' ) AND ( `name` = '127.0.0.1' ) LIMIT 1   [ RunTime:0.000912s ]
+INFO: Run check_ipban Behavior [ RunTime:-0.003373s ]
+INFO: Run load_lang Behavior [ RunTime:-0.046004s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.048714s ]
+NOTIC: [2048] Declaration of baseAction::ajaxReturn() should be compatible with that of Action::ajaxReturn() D:\php-project-home\www.muxiuqiu.com\app\Lib\Action\baseAction.class.php 第 132 行.
+SQL: SHOW COLUMNS FROM `pin_album` [ RunTime:0.004992s ]
+SQL: SELECT * FROM `pin_album` WHERE ( `id` = 15 ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000963s ]
+SQL: SHOW COLUMNS FROM `pin_album_cate` [ RunTime:0.005156s ]
+SQL: SHOW COLUMNS FROM `pin_album_item` [ RunTime:0.005874s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pin_album_item` LEFT JOIN pin_item i ON i.id=pin_album_item.item_id WHERE ( pin_album_item.album_id = 15 ) AND ( i.status = '1' ) LIMIT 1   [ RunTime:0.100873s ]
+SQL: SELECT pin_album_item.intro,i.id,i.uid,i.title,i.img,i.price,i.likes,i.comments FROM `pin_album_item` LEFT JOIN pin_item i ON i.id=pin_album_item.item_id WHERE ( pin_album_item.album_id = 15 ) AND ( i.status = '1' ) ORDER BY pin_album_item.add_time DESC LIMIT 0,10   [ RunTime:0.010037s ]
+SQL: UPDATE `pin_album` SET `items`=2 WHERE ( `id` = 15 ) [ RunTime:0.000564s ]
+SQL: SELECT * FROM `pin_album` WHERE ( `cate_id` = 1 ) AND ( `id` <> 15 ) ORDER BY id DESC LIMIT 2   [ RunTime:0.003848s ]
+SQL: SHOW COLUMNS FROM `pin_album_comment` [ RunTime:0.004971s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `pin_album_comment` WHERE ( `album_id` = 15 ) LIMIT 1   [ RunTime:0.000557s ]
+SQL: SELECT * FROM `pin_album_comment` WHERE ( `album_id` = 15 ) ORDER BY id DESC LIMIT 0,8   [ RunTime:0.000452s ]
+INFO: [ view_template ] --START--
+INFO: Run basic_template Behavior [ RunTime:-0.233864s ]
+INFO: [ view_template ] --END-- [ RunTime:0.003780s ]
+INFO: [ view_parse ] --START--
+INFO: [ view_template ] --START--
+INFO: Run basic_template Behavior [ RunTime:-0.262790s ]
+INFO: [ view_template ] --END-- [ RunTime:-0.025116s ]
+INFO: [ view_template ] --START--
+INFO: Run basic_template Behavior [ RunTime:-0.266676s ]
+INFO: [ view_template ] --END-- [ RunTime:-0.029015s ]
+INFO: [ view_template ] --START--
+INFO: Run basic_template Behavior [ RunTime:-0.269980s ]
+INFO: [ view_template ] --END-- [ RunTime:-0.032324s ]
+INFO: [ view_template ] --START--
+INFO: Run basic_template Behavior [ RunTime:-0.273417s ]
+INFO: [ view_template ] --END-- [ RunTime:-0.035762s ]
+SQL: SELECT * FROM `pin_album` WHERE ( `status` = 1 ) AND ( `uid` = 9 ) ORDER BY ordid,id DESC LIMIT 10   [ RunTime:0.000996s ]
+SQL: SHOW COLUMNS FROM `pin_adboard` [ RunTime:0.004343s ]
+SQL: SELECT * FROM `pin_adboard` WHERE ( `id` = 11 ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.001118s ]
+SQL: SHOW COLUMNS FROM `pin_ad` [ RunTime:0.004380s ]
+SQL: SELECT `id`,`type`,`name`,`url`,`content`,`desc`,`extimg`,`extval` FROM `pin_ad` WHERE ( `board_id` = 11 ) AND ( `start_time` <= 1357297178 ) AND ( `end_time` >= 1357297178 ) AND ( `status` = 1 ) ORDER BY ordid  [ RunTime:0.000706s ]
+INFO: [ view_template ] --START--
+INFO: Run basic_template Behavior [ RunTime:-0.414942s ]
+INFO: [ view_template ] --END-- [ RunTime:-0.177281s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.418138s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006009s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.424236s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.424948s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.425649s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.426153s ]
+INFO: Run content_replace Behavior [ RunTime:-0.426987s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004036s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.428408s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001263s ]
+SQL: SELECT * FROM `pin_adboard` WHERE ( `id` = 8 ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.001776s ]
+SQL: SELECT `id`,`type`,`name`,`url`,`content`,`desc`,`extimg`,`extval` FROM `pin_ad` WHERE ( `board_id` = 8 ) AND ( `start_time` <= 1357297178 ) AND ( `end_time` >= 1357297178 ) AND ( `status` = 1 ) ORDER BY ordid  [ RunTime:0.001161s ]
+INFO: [ view_template ] --START--
+INFO: Run basic_template Behavior [ RunTime:-0.451212s ]
+INFO: [ view_template ] --END-- [ RunTime:-0.213572s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.452751s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.028608s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.462417s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.462567s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.462744s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.462812s ]
+INFO: Run content_replace Behavior [ RunTime:-0.463006s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.034141s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.463243s ]
+INFO: [ view_end ] --END-- [ RunTime:-0.033576s ]
+NOTIC: [2] Missing argument 1 for JSMin::__construct(), called in D:\php-project-home\www.muxiuqiu.com\app\Lib\Pintag\loadTag.class.php on line 14 and defined D:\php-project-home\www.muxiuqiu.com\app\Lib\ORG\JSMin.class.php 第 89 行.
+NOTIC: [8] Undefined variable: input D:\php-project-home\www.muxiuqiu.com\app\Lib\ORG\JSMin.class.php 第 91 行.
+NOTIC: [2] Missing argument 1 for Dir::__construct(), called in D:\php-project-home\www.muxiuqiu.com\app\Lib\Pintag\loadTag.class.php on line 15 and defined D:\php-project-home\www.muxiuqiu.com\app\Lib\ORG\Dir.class.php 第 37 行.
+NOTIC: [8] Undefined variable: path D:\php-project-home\www.muxiuqiu.com\app\Lib\ORG\Dir.class.php 第 39 行.
+NOTIC: [8] Undefined variable: path D:\php-project-home\www.muxiuqiu.com\app\Lib\ORG\Dir.class.php 第 39 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.463243s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.028608s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.493606s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.494434s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.494624s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.494692s ]
+INFO: Run content_replace Behavior [ RunTime:-0.494915s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.065330s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.495288s ]
+INFO: [ view_end ] --END-- [ RunTime:-0.065618s ]
+
+[ 2013-01-04T18:59:42+08:00 ] 127.0.0.1 /www.muxiuqiu.com/item/61.html
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.005874s ]
+INFO: [ route_check ] --END-- [ RunTime:0.006077s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:-0.002245s ]
+SQL: SHOW COLUMNS FROM `pin_ipban` [ RunTime:0.004656s ]
+SQL: DELETE FROM `pin_ipban` WHERE expires_time <> 0 AND expires_time < 1357297181 [ RunTime:0.000921s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `pin_ipban` WHERE ( `type` = 'ip' ) AND ( `name` = '127.0.0.1' ) LIMIT 1   [ RunTime:0.000898s ]
+INFO: Run check_ipban Behavior [ RunTime:-0.004022s ]
+INFO: Run load_lang Behavior [ RunTime:-0.050756s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.106973s ]
+NOTIC: [2048] Declaration of baseAction::ajaxReturn() should be compatible with that of Action::ajaxReturn() D:\php-project-home\www.muxiuqiu.com\app\Lib\Action\baseAction.class.php 第 132 行.
+SQL: SHOW COLUMNS FROM `pin_item` [ RunTime:0.005224s ]
+SQL: SELECT `id`,`title`,`uid`,`uname`,`intro`,`price`,`url`,`likes`,`comments`,`tag_cache`,`seo_title`,`seo_keys`,`seo_desc`,`add_time` FROM `pin_item` WHERE ( `id` = 61 ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.001894s ]
+SQL: SHOW COLUMNS FROM `pin_item_orig` [ RunTime:0.005675s ]
+NOTIC: [8] Undefined index:  orig_id D:\php-project-home\www.muxiuqiu.com\app\Lib\Action\home\itemAction.class.php 第 24 行.
+SQL: SELECT `name`,`img` FROM `pin_item_orig` LIMIT 1   [ RunTime:0.001619s ]
+SQL: SHOW COLUMNS FROM `pin_item_img` [ RunTime:0.009334s ]
+SQL: SELECT `url` FROM `pin_item_img` WHERE ( `item_id` = 61 ) ORDER BY ordid  [ RunTime:0.001297s ]
+SQL: SHOW COLUMNS FROM `pin_item_tag` [ RunTime:0.004875s ]
+SQL: SELECT i.id,i.img,i.intro,pin_item_tag.tag_id FROM `pin_item_tag` LEFT JOIN pin_item i ON i.id = pin_item_tag.item_id WHERE ( pin_item_tag.tag_id = 331 ) AND ( i.id <> 61 ) ORDER BY i.id DESC LIMIT 9   [ RunTime:0.002008s ]
+SQL: SELECT i.id,i.img,i.intro,pin_item_tag.tag_id FROM `pin_item_tag` LEFT JOIN pin_item i ON i.id = pin_item_tag.item_id WHERE ( pin_item_tag.tag_id = 332 ) AND ( i.id <> 61 ) ORDER BY i.id DESC LIMIT 9   [ RunTime:0.004363s ]
+SQL: SELECT i.id,i.img,i.intro,pin_item_tag.tag_id FROM `pin_item_tag` LEFT JOIN pin_item i ON i.id = pin_item_tag.item_id WHERE ( pin_item_tag.tag_id = 51 ) AND ( i.id <> 61 ) ORDER BY i.id DESC LIMIT 9   [ RunTime:0.003188s ]
+SQL: SHOW COLUMNS FROM `pin_item_comment` [ RunTime:0.008032s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `pin_item_comment` WHERE ( `item_id` = 61 ) LIMIT 1   [ RunTime:0.001027s ]
+SQL: SELECT * FROM `pin_item_comment` WHERE ( `item_id` = 61 ) ORDER BY id DESC LIMIT 0,8   [ RunTime:0.000915s ]
+SQL: UPDATE `pin_item` SET `hits`=hits+1 WHERE ( `id` = 61 ) [ RunTime:0.012815s ]
+INFO: [ view_template ] --START--
+INFO: Run basic_template Behavior [ RunTime:-0.233786s ]
+INFO: [ view_template ] --END-- [ RunTime:0.003574s ]
+INFO: [ view_parse ] --START--
+INFO: [ view_template ] --START--
+INFO: Run basic_template Behavior [ RunTime:-0.246357s ]
+INFO: [ view_template ] --END-- [ RunTime:-0.008982s ]
+INFO: [ view_template ] --START--
+INFO: Run basic_template Behavior [ RunTime:-0.248409s ]
+INFO: [ view_template ] --END-- [ RunTime:-0.011053s ]
+INFO: [ view_template ] --START--
+INFO: Run basic_template Behavior [ RunTime:-0.250233s ]
+INFO: [ view_template ] --END-- [ RunTime:-0.012879s ]
+SQL: SHOW COLUMNS FROM `pin_adboard` [ RunTime:0.004605s ]
+SQL: SELECT * FROM `pin_adboard` WHERE ( `id` = 14 ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.001496s ]
+SQL: SHOW COLUMNS FROM `pin_ad` [ RunTime:0.005297s ]
+SQL: SELECT `id`,`type`,`name`,`url`,`content`,`desc`,`extimg`,`extval` FROM `pin_ad` WHERE ( `board_id` = 14 ) AND ( `start_time` <= 1357297181 ) AND ( `end_time` >= 1357297181 ) AND ( `status` = 1 ) ORDER BY ordid  [ RunTime:0.000863s ]
+INFO: [ view_template ] --START--
+INFO: Run basic_template Behavior [ RunTime:-0.358483s ]
+INFO: [ view_template ] --END-- [ RunTime:-0.121138s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.359666s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005310s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.365073s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.366437s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.369122s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.371742s ]
+INFO: Run content_replace Behavior [ RunTime:-0.373971s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011456s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.376695s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002505s ]
+NOTIC: [8] Undefined index:  title D:\php-project-home\www.muxiuqiu.com\data\runtime\Cache\home\51c31c672c0ef034ae641a30d4ae7487.php 第 100 行.
+NOTIC: [8] Undefined index:  title D:\php-project-home\www.muxiuqiu.com\data\runtime\Cache\home\51c31c672c0ef034ae641a30d4ae7487.php 第 100 行.
+NOTIC: [8] Undefined index:  title D:\php-project-home\www.muxiuqiu.com\data\runtime\Cache\home\51c31c672c0ef034ae641a30d4ae7487.php 第 100 行.
+NOTIC: [8] Undefined index:  title D:\php-project-home\www.muxiuqiu.com\data\runtime\Cache\home\51c31c672c0ef034ae641a30d4ae7487.php 第 100 行.
+NOTIC: [8] Undefined index:  title D:\php-project-home\www.muxiuqiu.com\data\runtime\Cache\home\51c31c672c0ef034ae641a30d4ae7487.php 第 100 行.
+NOTIC: [8] Undefined index:  title D:\php-project-home\www.muxiuqiu.com\data\runtime\Cache\home\51c31c672c0ef034ae641a30d4ae7487.php 第 100 行.
+NOTIC: [8] Undefined index:  title D:\php-project-home\www.muxiuqiu.com\data\runtime\Cache\home\51c31c672c0ef034ae641a30d4ae7487.php 第 100 行.
+NOTIC: [8] Undefined index:  title D:\php-project-home\www.muxiuqiu.com\data\runtime\Cache\home\51c31c672c0ef034ae641a30d4ae7487.php 第 100 行.
+NOTIC: [8] Undefined index:  title D:\php-project-home\www.muxiuqiu.com\data\runtime\Cache\home\51c31c672c0ef034ae641a30d4ae7487.php 第 100 行.
+NOTIC: [8] Undefined index:  title D:\php-project-home\www.muxiuqiu.com\data\runtime\Cache\home\51c31c672c0ef034ae641a30d4ae7487.php 第 100 行.
+NOTIC: [8] Undefined index:  title D:\php-project-home\www.muxiuqiu.com\data\runtime\Cache\home\51c31c672c0ef034ae641a30d4ae7487.php 第 100 行.
+SQL: SELECT * FROM `pin_adboard` WHERE ( `id` = 13 ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.001215s ]
+SQL: SELECT `id`,`type`,`name`,`url`,`content`,`desc`,`extimg`,`extval` FROM `pin_ad` WHERE ( `board_id` = 13 ) AND ( `start_time` <= 1357297181 ) AND ( `end_time` >= 1357297181 ) AND ( `status` = 1 ) ORDER BY ordid  [ RunTime:0.001169s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\php-project-home\www.muxiuqiu.com\app\Lib\Widget\advertWidget.class.php 第 22 行.
+INFO: [ view_template ] --START--
+INFO: Run basic_template Behavior [ RunTime:-0.406043s ]
+INFO: [ view_template ] --END-- [ RunTime:-0.168701s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.406454s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.041480s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.409909s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.410052s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.410232s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.410295s ]
+INFO: Run content_replace Behavior [ RunTime:-0.410465s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.033377s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.410692s ]
+INFO: [ view_end ] --END-- [ RunTime:-0.031500s ]
+SQL: SELECT * FROM `pin_adboard` WHERE ( `id` = 11 ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.001107s ]
+SQL: SELECT `id`,`type`,`name`,`url`,`content`,`desc`,`extimg`,`extval` FROM `pin_ad` WHERE ( `board_id` = 11 ) AND ( `start_time` <= 1357297181 ) AND ( `end_time` >= 1357297181 ) AND ( `status` = 1 ) ORDER BY ordid  [ RunTime:0.006597s ]
+INFO: [ view_template ] --START--
+INFO: Run basic_template Behavior [ RunTime:-0.421401s ]
+INFO: [ view_template ] --END-- [ RunTime:-0.184056s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.421759s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.056786s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.425584s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.425736s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.425869s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.425934s ]
+INFO: Run content_replace Behavior [ RunTime:-0.426116s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.049052s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.426369s ]
+INFO: [ view_end ] --END-- [ RunTime:-0.047175s ]
+SQL: SELECT * FROM `pin_adboard` WHERE ( `id` = 8 ) AND ( `status` = 1 ) LIMIT 1   [ RunTime:0.000712s ]
+SQL: SELECT `id`,`type`,`name`,`url`,`content`,`desc`,`extimg`,`extval` FROM `pin_ad` WHERE ( `board_id` = 8 ) AND ( `start_time` <= 1357297181 ) AND ( `end_time` >= 1357297181 ) AND ( `status` = 1 ) ORDER BY ordid  [ RunTime:0.000810s ]
+INFO: [ view_template ] --START--
+INFO: Run basic_template Behavior [ RunTime:-0.444946s ]
+INFO: [ view_template ] --END-- [ RunTime:-0.207600s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.446461s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.081477s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.454999s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.455149s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.455281s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.455348s ]
+INFO: Run content_replace Behavior [ RunTime:-0.455526s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.078468s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.455766s ]
+INFO: [ view_end ] --END-- [ RunTime:-0.076573s ]
+NOTIC: [2] Missing argument 1 for JSMin::__construct(), called in D:\php-project-home\www.muxiuqiu.com\app\Lib\Pintag\loadTag.class.php on line 14 and defined D:\php-project-home\www.muxiuqiu.com\app\Lib\ORG\JSMin.class.php 第 89 行.
+NOTIC: [8] Undefined variable: input D:\php-project-home\www.muxiuqiu.com\app\Lib\ORG\JSMin.class.php 第 91 行.
+NOTIC: [2] Missing argument 1 for Dir::__construct(), called in D:\php-project-home\www.muxiuqiu.com\app\Lib\Pintag\loadTag.class.php on line 15 and defined D:\php-project-home\www.muxiuqiu.com\app\Lib\ORG\Dir.class.php 第 37 行.
+NOTIC: [8] Undefined variable: path D:\php-project-home\www.muxiuqiu.com\app\Lib\ORG\Dir.class.php 第 39 行.
+NOTIC: [8] Undefined variable: path D:\php-project-home\www.muxiuqiu.com\app\Lib\ORG\Dir.class.php 第 39 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.455766s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.081477s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.484016s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.484531s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.484688s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.484752s ]
+INFO: Run content_replace Behavior [ RunTime:-0.485018s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.107483s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.485373s ]
+INFO: [ view_end ] --END-- [ RunTime:-0.106181s ]
+

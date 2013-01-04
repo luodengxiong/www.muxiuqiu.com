@@ -1,0 +1,7 @@
+User-agent: *
+
+Disallow: /_core/
+
+Disallow: /api/
+
+Disallow: /app/
